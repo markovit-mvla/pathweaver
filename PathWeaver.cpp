@@ -39,9 +39,9 @@ PATH_TYPE* PathWeaver::purePursuit(double lookaheadDistance)
     PATH_TYPE{ 
         nextCoord,
         heading,
-        /* (2*pi*r) / theta to obtain curvature */
-        (2 * (M_PI * ((lookaheadDistance * lookaheadDistance)/(2 * curr.first)))
-            / (heading * 180 / M_PI),
+        /* rtheta to obtain curvature */
+        ((lookaheadDistance * lookaheadDistance)/(2 * curr.first))
+            * heading * (180.0 / M_PI),
         lookaheadDistance,
     } closestPath;
 

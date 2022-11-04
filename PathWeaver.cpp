@@ -9,7 +9,7 @@
 PathWeaver::PathWeaver()
 {
     /* Can change x to determine how much of an arc the path is */
-    double x = 0.0;
+    double x = 1.0;
     PATH_TYPE path_ = &purePursuit(SwerveDrive::getDistance(SwerveDrive::getRobotGoalAng()) / x);
     /* Add path to network table */
     frc::SmartDashboard::PutData("Path", path_);

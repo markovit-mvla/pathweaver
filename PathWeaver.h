@@ -21,7 +21,5 @@ class PathWeaver()
     public:
         PathWeaver();
         PATH_TYPE* purePursuit(double lookaheadDistance);
+        double getAngle();
 };
-
-
-

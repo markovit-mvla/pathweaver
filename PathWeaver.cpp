@@ -53,12 +53,15 @@ PATH_TYPE* PathWeaver::purePursuit(double lookaheadDistance)
 
     /* Path to take */
     PATH_TYPE{ 
+        /* New coordinate */
         nextCoord,
+        /* Heading to goal */
         heading,
         /* Velocity to take on path to point */
         arcSpeed,
         /* rtheta to obtain curvature */
         radius * heading * (180.0 / M_PI),
+        /* Distance to next path point */
         lookaheadDistance,
     } closestPath;
 
